@@ -8,10 +8,10 @@ type UserType = {
 };
 
 type UserListPropsType = {
-  users: UserType; // ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ...
+  users: Array<UserType>; // ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ... DONE
 };
 
-export const UserList = (props: 'ВСТАВЛЯЕМ ТИПИЗАЦИЮ') => {
+export const UserList = (props: UserListPropsType) => {
   return (
     <div id={'hw01-users'}>
       <h2>User List:</h2>
